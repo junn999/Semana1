@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo2.png" type="image/png">
+    <title>Arduino Models</title>
+</head>
+<body>
+
+    <header>
+        <h1>¿Qué es Arduino?</h1>
+        <h3>Arduino es una plataforma de hardware y software de código abierto para desarrollar proyectos de electrónica.</h3>
+    <img src="logo2.png" alt="">
+    </header>
+
+    <h2>Un poco de historia</h2>
+
+    <p>Arduino nació en el Instituto de Diseño de Interacción de Ivrea como una herramienta fácil para la creación rápida de prototipos, destinada a estudiantes sin experiencia en electrónica y programación. En cuanto llegó a una comunidad más amplia, la placa Arduino comenzó a cambiar para adaptarse a nuevas necesidades y desafíos, diferenciando su oferta de simples placas de 8 bits a productos para aplicaciones de IoT, wearables, impresión 3D y entornos integrados. </p>
+   
+    <section>
+        <h1>Modelos de Arduino más utilizados</h1> 
+    </section>   
+
+     <div class="arduino-container">
+
+            <div class="arduino" onmouseenter="showInfo('Arduino Uno')" onmouseleave="hideInfo()" onclick="showDetails('Arduino Uno')">
+                <img src="arduino1.png" alt="Arduino Uno">
+            </div>
+
+            <div class="arduino" onmouseenter="showInfo('Arduino Nano')" onmouseleave="hideInfo()" onclick="showDetails('Arduino Nano')">
+                <img src="nano.png" alt="Arduino Nano">
+            </div>
+
+            <div class="arduino" onmouseenter="showInfo('Arduino Lilypad')" onmouseleave="hideInfo()" onclick="showDetails('Arduino Lilypad')">
+                <img src="lilypad.png" alt="Arduino Lilypad">
+            </div>
+
+            <div class="arduino" onmouseenter="showInfo('Arduino Mega')" onmouseleave="hideInfo()" onclick="showDetails('Arduino Mega')">
+                <img src="mega.png" alt="Arduino Mega">
+            </div>
+
+            <!-- Agrega más bloques para otros modelos de Arduino -->
+
+            <div id="info-container" class="info-container">
+                <h2 id="arduino-title">Información del Arduino</h2>
+                <p id="arduino-info">Aquí se mostrará la información específica del Arduino seleccionado.</p>
+            </div>
+
+        </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
